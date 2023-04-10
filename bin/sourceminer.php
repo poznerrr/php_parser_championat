@@ -8,12 +8,10 @@ if (PHP_SAPI === 'cli') {
     die("Запустите скрипт из консоли");
 }
 
-require_once dirname(__DIR__) . '/vendor/autoload.php';
 
-$client = new Predis\Client();
 const BASE_URL = "https://www.slamdunk.ru/index.php?ajaxpages/paginator&page=";
 const CONTENT_FOLDER = 'content';
-const FIRST_AVAILABLE_PAGE = 1001;
+const FIRST_AVAILABLE_PAGE = 1;
 const LAST_AVAILABLE_PAGE = 4000;
 
 
